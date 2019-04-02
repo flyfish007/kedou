@@ -1,0 +1,49 @@
+/*css reset*/
+
+*{margin:0;padding:0;border:0;outline:0; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+// html,body{ height: 100%; overflow:hidden;}
+html,body,form,fieldset,p,div,h1,h2,h3,h4,h5,h6{-webkit-text-size-adjust:none}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;clear:both;}
+body{ font-family: "PingFang SC","Microsoft YaHei","微软雅黑","Hiragino Sans GB","Helvetica Neue",Helvetica,Arial,sans-serif; font-size:13px;-webkit-text-size-adjust:none;  -webkit-tap-highlight-color:transparent;}
+h1,h2,h3,h4,h5,h6{font-size:100%; font-weight:normal}
+i,span,em,cite,p,dl,dt,dd,span,b{ font-style:normal; font-weight: normal;}
+input,button,textarea{ background: transparent; font-size: 100%;}
+img{border:0;-ms-interpolation-mode:bicubic; }
+ul,ol,li{list-style:none}
+
+
+@font-face {
+  font-family: 'iconfont';  /* project id 1111186 */
+  src: url('//at.alicdn.com/t/font_1111186_p3140032m0o.eot');
+  src: url('//at.alicdn.com/t/font_1111186_p3140032m0o.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1111186_p3140032m0o.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1111186_p3140032m0o.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1111186_p3140032m0o.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1111186_p3140032m0o.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mt10{ margin-top: 10px !important;}
+.mt20{ margin-top: 20px !important;}
+.mb10{ margin-bottom: 10px !important;}
+.mb20{ margin-bottom: 20px !important;}
+.ml10{ margin-left: 10px !important;}
+.pall15{ padding: 15px;}
+.ptb15{ padding: 15px 0;}
+.pt10{ padding-top: 10px !important;}
+.pt20{ padding-top: 20px !important;}
+.pl10{padding-left: 10px !important;}
+.pl20{padding-left: 20px !important;}
+.plr25{ padding-left: 25px !important; padding-right: 25px !important;}
+.pb10{ padding-bottom: 10px !important;}
+.pb20{ padding-bottom: 20px !important;}
+.pb40{ padding-bottom: 40px !important;}
+
+.red{color:#ff0000;}
