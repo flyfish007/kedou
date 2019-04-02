@@ -1,6 +1,6 @@
 <template>
   <div>
-   <p class="red"> hello,home </p>
+   <p class="red"> 郭方方的前端学习网站demo... </p>
     <p class="testImg"> </p>
 
     <p class="mt20"> <span class="iconfont manue">&#xe890;</span></p>
