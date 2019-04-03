@@ -3,10 +3,10 @@
    <p class="red"> 郭方方的前端学习网站demo... </p>
     <p class="testImg"> </p>
 
-    <p class="mt20"> <span class="iconfont manue">&#xe890;</span></p>
+    <p class="mt20"> <span class="iconfont manue"  @click="show=true">&#xe890;</span></p>
 
 
-    <van-button type="info">信息按钮</van-button>
+    <van-button type="info" @click="bottomShow=true">popup bottom</van-button>
 
     <br><br><br><br>
 
@@ -26,6 +26,18 @@
       <!--<div class="swiper-scrollbar"   slot="scrollbar"></div>-->
     </swiper>
 
+    <van-popup v-model="show" position="left" style="height: 100%; width:50%;">
+        <van-button @click="show=false"> 关闭 </van-button>
+    </van-popup>
+
+    <van-popup v-model="bottomShow" position="bottom">
+      <van-row  type="flex" justify="space-between">
+        <van-col span="4"> 请选择 </van-col>
+        <van-col span="4" style="text-align: right;">  <span @click="bottomShow=false"> 关闭 </span> </van-col>
+      </van-row>
+      <van-picker :columns="columns" @change="onChange" />
+
+    </van-popup>
 
   </div>
 </template>
@@ -37,7 +49,10 @@ export default {
     return {
       swiperOption: {
         slidesPerView : 3,
-      }
+      },
+      show:false,
+      bottomShow:false,
+      columns: ['杭州', '宁波', '温州', '嘉兴', '湖州']
     }
   },
   computed: {
@@ -60,6 +75,9 @@ export default {
 //          }
 //        })
 
+    },
+    onChange(picker, value, index) {
+      this.$toast(`当前值：${value}, 当前索引：${index}`);
     }
   }
 }
@@ -70,4 +88,5 @@ export default {
     .testImg{background: url('../common/images/456456.png') no-repeat; width: 100px; height: 100px;}
     .manue{font-size: 40px;}
     .swiper-slide{height: 150px;background: #eee;text-align: center; padding-top: 65px; border-right: solid 1px #ccc;}
+
 </style>

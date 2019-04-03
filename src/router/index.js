@@ -1,9 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+const _import = file => () => import('@/components/' + file + '.vue')
 
 Vue.use(Router)
-
-const _import = file => () => import('@/components/' + file + '.vue')
 
 export default new Router({
   mode: 'history',
@@ -11,7 +10,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component:_import('home')
+      component: _import('home')
     }
   ]
 })

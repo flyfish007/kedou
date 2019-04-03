@@ -1,9 +1,8 @@
 // 全局注册方法
 import fetch from './fetch'
-import { Loading } from 'element-ui';
 export default {
     install(Vue, options) {
-        Vue.prototype.elLoading = null,
+
         //跳转 新页面打开
         Vue.prototype.openNewWindow = function(query) {
             let host = window.location.host;
@@ -265,16 +264,6 @@ export default {
                 minute = minute < 10 ? ('0' + minute) : minute;
                 second = second < 10 ? ('0' + second) : second;
                 return y + '-' + m + '-' + d + ' ' + h + ':' + minute + ':' + second;
-            },
-            // 全屏 loading 提示状态
-            Vue.prototype.openLoading = function() {
-                this.elLoading = Loading.service({
-                    lock: true,
-                    text: 'Loading...',
-                    spinner: 'el-icon-loading',
-                    customClass : 'eboss-loading',
-                    background: 'rgba(0, 0, 0, 0.5)'
-                })
             }
 
 
