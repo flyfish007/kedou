@@ -66,7 +66,7 @@ export default {
   methods: {
     init(){
 
-//      this.axiosPost("/cpn/console/couponBatch/query", {"code":"","name":"","type":"","orderType":"","useChannel":"","startDate":"","endDate":"","username":"","batchStatus":"","remark":"","sendStatus":"1","validShopType":"","pageIndex":1,"pageSize":10,"queryCount":true,"start":0})
+//      this.axiosPost("/post_user",{user:"gff",pwd:"00"})
 //        .then(res => {
 //          if (res.success) {
 //

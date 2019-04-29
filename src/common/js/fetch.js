@@ -5,7 +5,7 @@ import { getCookie } from './utils';
 
 // 创建axios实例
 const service = axios.create({
-  baseURL: "http://gtw.qa.enmonster.com", // api的base_url
+  baseURL: "http://localhost:8081", // api的base_url
 })
 
 // respone拦截器
